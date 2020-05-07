@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .boxes{
+            width:100px;
+            height:100px;
+            background-color: {{ color }};
+            margin:5px;
+            border:1px solid black;
+            display:inline-block;
+        }
+    </style>
+<body>
+    {% for x in range(0,times) %}
+        <div class="boxes"></div>
+    {% endfor %}
+
+</body>
+</html>
